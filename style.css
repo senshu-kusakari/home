@@ -6,3 +6,362 @@
 /* SVGアイコン */
 .badges div{grid-template-rows:auto auto;align-content:center;gap:5px;padding:16px}.badge-icon{width:42px;height:42px;margin:auto}.badges span{display:block}.cta-icon{width:34px;height:34px;margin-right:12px;filter:brightness(0) invert(1)}.trouble-grid div{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:170px}.trouble-icon{width:58px;height:58px}.card{position:relative}.card-icon{width:54px;height:54px;margin:0 auto 8px}.info-grid .card h2{text-align:center}.flow li{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}.flow-icon{width:58px;height:58px;margin:0 auto 12px}.flow strong{position:absolute;top:10px;left:10px;width:30px;height:30px;margin:0;font-size:14px}
 @media(max-width:540px){.trouble-grid div{min-height:145px}.trouble-icon{width:50px;height:50px}.flow-icon{width:52px;height:52px}}
+
+/* ========================================
+   追加セクション共通
+======================================== */
+
+.lp-section {
+  padding: 72px 20px;
+}
+
+.lp-section:nth-of-type(even) {
+  background: #f5f8f3;
+}
+
+.lp-container {
+  width: min(100%, 1080px);
+  margin: 0 auto;
+}
+
+.lp-section-heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.lp-section-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #4c7a45;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.lp-section-title {
+  margin: 0;
+  color: #263626;
+  font-size: clamp(26px, 4vw, 38px);
+  line-height: 1.4;
+}
+
+.lp-section-description {
+  max-width: 700px;
+  margin: 16px auto 0;
+  color: #5f695f;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.lp-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.lp-card {
+  padding: 30px 24px;
+  background: #ffffff;
+  border: 1px solid #e0e9dc;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(39, 70, 37, 0.07);
+}
+
+.lp-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 20px;
+  background: #edf5e9;
+  border-radius: 50%;
+  color: #4c7a45;
+  font-size: 26px;
+}
+
+.lp-card-title {
+  margin: 0 0 12px;
+  color: #263626;
+  font-size: 20px;
+}
+
+.lp-card-text {
+  margin: 0;
+  color: #5f695f;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.lp-highlight {
+  color: #39713a;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .lp-section {
+    padding: 56px 18px;
+  }
+
+  .lp-card-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .lp-card {
+    padding: 24px 20px;
+  }
+}
+
+/* 放置リスク */
+
+.risk-section {
+  background: #fffaf0;
+}
+
+.risk-section .lp-card {
+  border-color: #eee3c8;
+}
+
+.risk-section .lp-card-icon {
+  background: #fff3d7;
+}
+
+.risk-message {
+  margin-top: 32px;
+  padding: 22px;
+  background: #ffffff;
+  border-left: 5px solid #5f8d55;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(39, 70, 37, 0.06);
+}
+
+.risk-message p {
+  margin: 0;
+  color: #374537;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.sp-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sp-only {
+    display: block;
+  }
+}
+
+/* 選ばれる理由 */
+
+.reason-section {
+  background: #f4f8f2;
+}
+
+.reason-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.reason-number {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  color: rgba(76, 122, 69, 0.1);
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* よくある質問 */
+
+.faq-section {
+  background: #f5f8f3;
+}
+
+.faq-container {
+  max-width: 850px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 14px;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #dfe9dc;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 16px rgba(39, 70, 37, 0.05);
+}
+
+.faq-question {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 56px 22px 22px;
+  color: #263626;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.6;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: "＋";
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  color: #4c7a45;
+  font-size: 24px;
+  transform: translateY(-50%);
+}
+
+.faq-item[open] .faq-question::after {
+  content: "−";
+}
+
+.faq-mark,
+.faq-answer-mark {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+.faq-mark {
+  background: #4c7a45;
+  color: #ffffff;
+}
+
+.faq-answer {
+  display: flex;
+  gap: 14px;
+  padding: 0 22px 24px;
+  color: #5f695f;
+}
+
+.faq-answer-mark {
+  background: #edf5e9;
+  color: #39713a;
+}
+
+.faq-answer p {
+  margin: 3px 0 0;
+  line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+  .faq-question {
+    padding: 18px 48px 18px 16px;
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    padding: 0 16px 20px;
+  }
+}
+
+/* 自己紹介 */
+
+.profile-section {
+  background: #ffffff;
+}
+
+.profile-box {
+  display: grid;
+  grid-template-columns: minmax(260px, 380px) 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 40px;
+  background: #f4f8f2;
+  border: 1px solid #dfe9dc;
+  border-radius: 24px;
+}
+
+.profile-image-wrap {
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: #e7eee4;
+  border-radius: 18px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-subtitle {
+  margin: 0 0 8px;
+  color: #4c7a45;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.profile-name {
+  margin: 0 0 22px;
+  color: #263626;
+  font-size: clamp(23px, 3vw, 32px);
+  line-height: 1.5;
+}
+
+.profile-text {
+  margin: 0 0 14px;
+  color: #5f695f;
+  line-height: 1.9;
+}
+
+.profile-list {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-list li {
+  position: relative;
+  padding-left: 28px;
+  color: #374537;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.profile-list li::before {
+  content: "✓";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #4c7a45;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .profile-box {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 22px;
+  }
+
+  .profile-image-wrap {
+    width: min(100%, 320px);
+    margin: 0 auto;
+  }
+}
