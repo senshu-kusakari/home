@@ -365,3 +365,31 @@
     margin: 0 auto;
   }
 }
+/* 自己紹介欄 Instagram */
+
+.profile-instagram {
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid #dfe9dc;
+}
+
+.profile-instagram-text {
+  margin: 0 0 8px;
+  color: #5f695f;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.profile-instagram-link {
+  display: inline-block;
+  color: #39713a;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.profile-instagram-link:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
